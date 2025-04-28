@@ -1,0 +1,29 @@
+p{
+  color: maroon;
+}
+h1{
+  color: grey;
+}
+h2{
+  color: grey;
+}
+h1,h2{
+  color: grey;
+  border-bottom: 1px solid black;
+} 
+h2{
+  font-size: 2rem;
+}
+body{
+  font-family: Arial;
+}
+html{
+  font-size: 12px;
+}
+body{
+	color: royalblue;
+	color: rgb(87, 195, 194);
+	color: #4169E1CC;
+	color: rgba(39,177,182,0.8);
+	color: #2775b6CC;
+}

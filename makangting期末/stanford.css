@@ -1,0 +1,146 @@
+.body{
+  width: 200px;
+}
+
+.image-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.original-image {
+    display: block;
+}
+
+.hover-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+    pointer-events: none;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hover-text {
+    color: white;
+    /* 原代码中 size 属性错误，应该是 font-size，这里设置较小的字号 */
+    font-size: 19px; 
+    position: fixed;
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 998;
+    pointer-events: none;
+    text-align: center;
+    width: 100%; /* 确保文字居中显示时宽度合适 */
+}
+
+.hover-subtext {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 997;
+    pointer-events: none;
+    text-align: center;
+    width: 100%; /* 确保文字居中显示时宽度合适 */
+}
+
+/* 为每个 .hover-subtext 元素设置不同的 top 值，实现垂直排列 */
+.hover-subtext:nth-of-type(1) {
+    top: calc(50% + 200px);
+}
+
+.hover-subtext:nth-of-type(2) {
+    top: calc(50% + 230px);
+}
+
+.hover-subtext:nth-of-type(3) {
+    top: calc(50% + 260px);
+}
+
+.image-link:hover .hover-image,
+.image-link:hover .hover-text,
+.image-link:hover .hover-subtext {
+    opacity: 1;
+}
+
+
+/* 其他已有的样式保持不变 */
+
+.stats-container {
+  display: flex;
+  justify-content: space-around; /* 子元素均匀分布 */
+  align-items: center; /* 子元素垂直居中 */
+  flex-wrap: wrap; /* 当空间不足时换行 */
+}
+
+.stat-item {
+  text-align: center; /* 文字居中 */
+  padding: 10px; /* 添加内边距 */
+  font-size: 19px; /* 调整字体大小 */
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 50px; /* 调整字体大小 */
+}
+
+.centeret-text{
+    text-align: center;
+    font-size: 25px; /* 调整字体大小 */
+}
+
+.research-heading {
+    text-align: center;
+    border: 2px solid rgb(179, 15, 15);
+    width: 450px; /* 设置宽度为 450px */
+    height: 65px; /* 设置高度为 65px */
+    line-height: 65px; /* 让文字垂直居中，行高等于高度 */
+    box-sizing: border-box; /* 让边框包含在设定的宽高内 */
+    margin: 0 auto; /* 让元素水平居中 */
+    background-color: rgb(179, 15, 15); /* 填充为红色 */
+    color: white; /* 文字颜色设置为白色，以便和红色背景区分 */
+    transition: background-color 0.3s ease; /* 添加过渡效果，使颜色变化更平滑 */
+}
+
+.research-heading:hover {
+    background-color: rgb(122, 0, 0); /* 鼠标悬停时背景变为暗红色 */
+    border-color: rgb(122, 0, 0); /* 鼠标悬停时边框也变为暗红色 */
+}
+
+
+.research-heading {
+    margin-top: 50px;
+    font-size: 20px; /* 调整字体大小 */
+}
+
+/* 黑色分隔线样式 */
+.black-divider {
+    width: 1500px;
+    height: 0.1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+/* 让 More about research 标题下移 */
+.research-heading {
+    margin-top: 50px; 
+    /* 这里的 50px 可根据你之前的需求调整 */
+}
+
+.hover-text-bold {
+    font-weight: bold;
+}
+
+.impactful-text {
+    font-size: 20px;
+}
+
